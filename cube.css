@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	.container {
+		margin: auto;
+		margin-top: 100px;
+		width: 10px;
+		height: 150px;
+		perspective: 800px;
+		perspective-origin: 50% 50%;
+	}
+
+
+	.cube {
+		position: relative;
+		width: 100px;
+		opacity: 0.25;
+		transform-style: preserve-3d;
+		animation: orbit 5s infinite linear;
+	}
+	.cube2 {
+		position: relative;
+		width: 100px;
+		opacity: 0.5;
+		transform-style: preserve-3d;
+		animation: orbit 10s infinite linear;
+	}
+	.cube3 {
+		position: relative;
+		opacity: .75;
+		width: 100px;
+		transform-style: preserve-3d;
+		animation: orbit 15s infinite linear;
+	}
+	
+	.cube:hover,.cube2:hover,.cube3:hover {
+		animation-play-state: paused;
+		opacity: .1;
+		transition-duration: .5s;
+		opacity: .1;
+		transition-property: opacity;
+	}
+	
+	
+	
+	.cube div, .cube2 div, .cube3 div {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+	}
+
+	.back {
+		background-color: #CF6;
+		transform: translateZ(-50px) rotateY(180deg);
+	}
+
+	.right {
+		background-color: #9FC;
+		transform: rotateY(-270deg) translateX(50px);
+		transform-origin: top right;
+	}
+
+	.left {
+		background-color: #9FC;
+		transform: rotateY(270deg) translateX(-50px);
+		transform-origin: center left;
+	}
+
+	.top {
+		background-color: #CCC;
+		transform: rotateX(-90deg) translateY(-50px);
+		transform-origin: top center;
+	}
+
+	.bottom {
+		background-color: #CCC;
+		transform: rotateX(90deg) translateY(50px);
+		transform-origin: bottom center;
+	}
+
+	.front {
+		background-color: #CF6;
+		transform: translateZ(50px);
+	}        
+	@keyframes orbit {
+		from { transform: rotateZ(-15deg) rotateX(45deg) rotateY(0deg); }
+		to { transform: rotateZ(345deg) rotateX(-315deg) rotateY(360deg); }
+	}
+
