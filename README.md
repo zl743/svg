@@ -1,24 +1,16 @@
-# svg
-Drawing on the Web SVG Projects
+# SVG Project
+Drawing on the Web SVG Project
 
-This is line 1
+Origami birds flying to an origami tree using SVG and CSS animation.
 
-Line 2
+##Process
+* make shapes using Illustrator
+* save as svg
+* use CSS to create interactibility
 
-Paragraphs must be separated by a line.
+##Creative Thinking
+> birds are cool
+> so is origami
+> would make a pretty *sweet* navigation in the future
 
-##Headings are noted by hashtags. one hashtag is heading level 1, two is level 2, etc.
-
-> quotes are rendered with greater than symbol like reddit greentext
-
-*This text will be italic because of an asterisk
-
-**This text will be bold because of a double asterisk
-
-**Everyone _must_ attend the meeting
-
-* item list 1
-* item list 2
-* item list 3
-
-[drawing on the web](http://github.com/zl743/)
+[drawing on the web](http://i6.cims.nyu.edu/~zl743/380/)
